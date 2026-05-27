@@ -24,7 +24,7 @@
  </script>
 
    <!-- Onde a palavra vai aparecer -->
-    <p>A palavra atual é: <span id="minhaPalavra">Café</span></p>
+    <p>A palavra atual é: <span id="minhaPalavra">Noite</span></p>
 
     <!-- O botão que chama a função JavaScript -->
     <button onclick="mudarPalavra()">Mudar Palavra</button>
@@ -35,12 +35,41 @@
             let elemento = document.getElementById("minhaPalavra");
             
             // Verifica a palavra atual e altera
-            if (elemento.innerHTML === "Café") {
-                elemento.innerHTML = "Chá";
+            if (elemento.innerHTML === "Noite") {
+                elemento.innerHTML = "Dia";
             } else {
-                elemento.innerHTML = "Café";
+                elemento.innerHTML = "Noite";
             }
         }
     </script>
+<div class="caixa">
+    <h4>ok.. sua idade, talvez ela indique seu nivel de fome!</h4>
+  <input type="number" id="idade" placeholder="Digite sua idade..">
+  <button onclick="verif()">Verificar</button>
+  <p id="resultado"></p>
+<script>
+   function verif() {
+    let idade = document.getElementById("idade").value;
+    if (idade >= 18) {
+         document.getElementById("resultado").innerText =
+          "maior de idade!";
+        }
+    if (idade > 120) {
+        document.getElementById("resultado").innerText  =
+         "idade invalida.";
+    }
+    else {
+        document.getElementById("resultado").innerText  =
+         "menor de idade.";
+    }
+   }
+
+
+</script>
+
+
+
+</div>
+</div>
 </body>
 </html>
