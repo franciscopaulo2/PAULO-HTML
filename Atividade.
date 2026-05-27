@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <title>
+        PAGINA
+    </title>
+</head>
+<body>
+    <H1>Meu site</H1>
+ <main>
+    <section>
+        <h2>Minha pagina</h2>
+        <button onclick="mostrarmensagen()">Botao</button>
+       
+    </section>
+ </main>
 
+ <script>
+    function mostrarmensagen(){
+        alert("bem vindo")
+    }
+    getElementByid(1)
+    innerText
+ </script>
+
+   <!-- Onde a palavra vai aparecer -->
+    <p>A palavra atual é: <span id="minhaPalavra">Café</span></p>
+
+    <!-- O botão que chama a função JavaScript -->
+    <button onclick="mudarPalavra()">Mudar Palavra</button>
+
+    <script>
+        function mudarPalavra() {
+            // Pega o elemento pelo ID
+            let elemento = document.getElementById("minhaPalavra");
+            
+            // Verifica a palavra atual e altera
+            if (elemento.innerHTML === "Café") {
+                elemento.innerHTML = "Chá";
+            } else {
+                elemento.innerHTML = "Café";
+            }
+        }
+    </script>
+</body>
+</html>
